@@ -1,0 +1,22 @@
+artifact_path: /home/jules/churn-project/notebooks/mlruns/1/models/m-29fae38896664758882d5072c40abb88/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.7
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.4.0
+mlflow_version: 3.15.1
+model_id: m-29fae38896664758882d5072c40abb88
+model_size_bytes: 596784
+model_uuid: m-29fae38896664758882d5072c40abb88
+prompts: null
+run_id: 351e5339adb6419eb18cf67995097ec5
+utc_time_created: '2026-08-09 20:20:24.849668'

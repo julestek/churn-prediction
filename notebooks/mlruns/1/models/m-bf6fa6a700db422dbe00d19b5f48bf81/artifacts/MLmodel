@@ -1,0 +1,23 @@
+artifact_path: /home/jules/churn-project/notebooks/mlruns/1/models/m-bf6fa6a700db422dbe00d19b5f48bf81/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.15.1
+model_id: m-bf6fa6a700db422dbe00d19b5f48bf81
+model_size_bytes: 9383
+model_uuid: m-bf6fa6a700db422dbe00d19b5f48bf81
+prompts: null
+run_id: 21698bd0241c4ca08a1f3aa9d29d1e94
+utc_time_created: '2026-08-09 19:54:06.568297'
