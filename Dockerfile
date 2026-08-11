@@ -10,7 +10,13 @@ RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --only main --no-root
 
 COPY src/ ./src/
-COPY models/ ./models/
+
+ARG KAGGLE_API_TOKEN
+RUN mkdir -p ~/.kaggle \
+    && echo "$KAGGLE_API_TOKEN" > ~/.kaggle/access_token \
+    && chmod 600 ~/.kaggle/access_token \
+    && poetry run kaggle datasets download -d blastchar/telco-customer-churn -p data/ --unzip \
+    && poetry run python -m src.train
 
 EXPOSE 8000
 
