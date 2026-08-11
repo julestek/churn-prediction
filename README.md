@@ -16,10 +16,12 @@ Prédire quels clients d'un opérateur télécom sont susceptibles de résilier,
 
 ## 🏗️ Architecture
 
+```
 ┌─────────────────┐ ┌──────────────────┐ ┌───────────────┐
 │ Streamlit Cloud │─────▶│ Render (API) │─────▶│ Modèle XGBoost │
 │ (dashboard) │ HTTP │ FastAPI │ │ (.pkl) │
 └─────────────────┘ └──────────────────┘ └───────────────┘
+```
 
 ## 🛠️ Stack technique
 
