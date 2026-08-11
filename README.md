@@ -103,15 +103,15 @@ poetry run pytest
 ## 📁 Structure du projet
 
 churn-project/
-├── .github/workflows/ # CI/CD (tests automatiques)
-├── notebooks/ # EDA, expérimentation, MLflow
+├── .github/workflows/     # CI/CD (tests automatiques)
+├── notebooks/              # EDA, expérimentation, MLflow
 ├── src/
-│ ├── data_processing.py # Nettoyage et feature engineering
-│ ├── train.py # Entraînement et sauvegarde du modèle
-│ ├── predict.py # Logique de prédiction
-│ ├── api.py # API FastAPI
-│ └── dashboard.py # Dashboard Streamlit
-├── tests/ # Tests unitaires (pytest)
+│   ├── data_processing.py  # Nettoyage et feature engineering
+│   ├── train.py             # Entraînement et sauvegarde du modèle
+│   ├── predict.py           # Logique de prédiction
+│   ├── api.py                # API FastAPI
+│   └── dashboard.py          # Dashboard Streamlit
+├── tests/                   # Tests unitaires (pytest)
 ├── Dockerfile
 └── pyproject.toml
 
