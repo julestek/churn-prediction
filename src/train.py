@@ -1,4 +1,5 @@
 import joblib
+import os
 from sklearn.model_selection import train_test_split, GridSearchCV
 from xgboost import XGBClassifier
 
@@ -43,6 +44,7 @@ def train_model(data_path: str, model_output_path: str):
     best_model = grid_search.best_estimator_
 
     # 4. Sauvegarde du modèle et des colonnes attendues
+    os.makedirs(os.path.dirname(model_output_path), exist_ok=True)
     joblib.dump(best_model, model_output_path)
     joblib.dump(list(X.columns), model_output_path.replace('.pkl', '_columns.pkl'))
 
