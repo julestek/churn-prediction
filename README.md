@@ -102,6 +102,7 @@ poetry run pytest
 
 ## 📁 Structure du projet
 
+```
 churn-project/
 ├── .github/workflows/     # CI/CD (tests automatiques)
 ├── notebooks/              # EDA, expérimentation, MLflow
@@ -114,6 +115,7 @@ churn-project/
 ├── tests/                   # Tests unitaires (pytest)
 ├── Dockerfile
 └── pyproject.toml
+```
 
 ## 🔄 CI/CD
 
